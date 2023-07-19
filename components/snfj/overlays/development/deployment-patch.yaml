@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: snfj
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-oocs-tenant/byoc-app-frhs/snfj@sha256:586782b177606e3d16dcb65ea2d272f79637d194d818ef603b4a0d2ec171b473
+        name: my-java-quarkus
+        resources: {}
+status: {}
